@@ -3,7 +3,7 @@
 ## 拉取源码
 
 ``` sh
-git clone  linux
+git clone git@github.com:yhuan416/stm32mp135_linux.git linux
 ```
 
 ## 构建
