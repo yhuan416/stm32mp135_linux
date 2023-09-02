@@ -12,7 +12,8 @@ cd linux-5.15.24/
 make distclean
 
 #选择配置文件为stm32mp1_atk_defconfig
-make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- stm32mp1_atk_defconfig 
+# make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- stm32mp1_atk_defconfig
+make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- stm32mp1_atk_new_defconfig
 
 #编译内核
 make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabihf- uImage vmlinux dtbs LOADADDR=0xC2000040 -j4
